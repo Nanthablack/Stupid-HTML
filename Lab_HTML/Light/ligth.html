@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale=1>
+    <title>JEJE_Ligth</title>
+
+</head>
+
+<body style="background-color:rgb(189, 235, 238);">
+
+    <h1 style="text-align:center;">My First JavaScript</h1>
+    <p style="text-align:center;">Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+    <h2>HTML Image</h2>
+
+    <script>
+        function light(sw) {
+            var pic;
+            if (sw == 0) {
+                pic = "pic_bulboff.gif"
+            } else {
+                pic = "pic_bulbon.gif"
+            }
+            document.getElementById('myImage').src = pic;
+        }
+    </script>
+
+    <img id="myImage" src="pic_bulboff.gif" width="250" height="350">
+
+    <p>
+        <button type="button" onclick="light(1)">Light On</button>
+        <button type="button" onclick="light(0)">Light Off</button>
+    </p>
+    <!--Test .................................-->
+    <h1 style="text-align:center;"> My Neighbor's House </h1>
+    <h2 style="color:rgb(30, 2, 61);">Nanthawat Mingjindakul 62050185 Kmitl.</h2>
+    <form action="">
+        <h3>
+            <label for="house">HOUSE > </label>
+            <select name="house" id="house">
+           <option value="" selected>Select a house</option>
+        </select>
+        </h3>
+    </form>
+
+    <ul id="family">
+
+    </ul>
+
+    <script src="Famly.js">
+    </script>
+
+</body>
+
+</html>
